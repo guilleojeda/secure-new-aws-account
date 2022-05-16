@@ -1,6 +1,6 @@
 # Secure your brand new AWS account
 
-This repo contains some very basic security configurations that can be applied to a new AWS account that is not a part of an AWS Organization. Some of these configurations are FREE, some are not (though they are very cheap and are recommended). They are separated into different parts, so you can apply just the free ones if that's what you want.
+This repo contains some very basic security configurations that can be applied to a new AWS account that is not a part of an AWS Organization. Some of these configurations are FREE (either they don't cost anything or are completely covered by the AWS Free Tier), some are not (though they are very cheap and are recommended). They are separated into different parts, so you can apply just the free ones if that's what you want.
 
 This is designed for people who don't (yet) know what they're doing and don't want to learn (yet).
 It is divided into six parts:
@@ -21,15 +21,19 @@ These security configurations are NOT perfect, they are NOT the best practices a
 Implemented:
 
 Coming soon:
-- Enable AWS CloudTrail
+- Enable AWS CloudTrail in all regions (encrypted with KMS)
+- Send CloudTrail events to CloudWatch Logs
 - Create a strong password policy for IAM Users
+- Enable Always encrypt new EBS volumes
+- Delete the root user access keys
+- Delete all default VPCs
 
 ## 1: Completely automated security configurations (NOT FREE)
 
 Implemented:
 
 Coming soon:
-- Delete the root user access keys
+- Enable AWS Config in all regions
 
 ## 2: Automated security configurations that require your input (FREE)
 
@@ -38,6 +42,7 @@ Implemented:
 Coming soon:
 - Create IAM User with Administrator Access
 - Billing alerts
+- Email alert for UnauthorizedOperation or AccessDenied logs in CloudTrail
 
 ## 2: Automated security configurations that require your input (NOT FREE)
 
