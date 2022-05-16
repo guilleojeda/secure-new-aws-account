@@ -49,7 +49,7 @@ Coming soon:
 Implemented:
 
 Coming soon:
-- Failed login attempt notification
+- SMS alert for UnauthorizedOperation or AccessDenied logs in CloudTrail
 
 ## 3: Security configurations that you will need to apply manually
 
